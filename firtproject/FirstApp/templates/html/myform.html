@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my form</title>
+</head>
+<body>
+	<form method="POST" action="{% url 'myform' %}">
+		{% csrf_token %}
+		<input type="text" name="uname" placeholder="enter your name"></br><br>
+		<input type="text" name="rollnum" placeholder="enter your roll number"></br><br>
+		<input type="email" name="mail" placeholder="enter your mail"><br><br>
+		<input type="submit" name="submit" value="submit">
+
+
+
+	</form>
+
+</body>
+</html>

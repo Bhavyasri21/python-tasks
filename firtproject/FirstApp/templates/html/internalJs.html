@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>including java script</title>
+	<script type="text/javascript">
+		function generateMSG()
+		{
+			alert("you clicked the button");
+		}
+	</script>
+	<script type="text/javascript" src="{% static 'js/sample.js' %}">
+		
+	</script>
+</head>
+<body>
+	<h2>click the button to get alert message</h2>
+		<input type="button" name="button" value="click me" onclick="generateMSG()">
+	<h2>click the button to get alert from external Js</h2>
+        <input type="button" name="button" value="click me" onclick="display()">
+</body>
+</html>
